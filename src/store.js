@@ -1,7 +1,8 @@
-import { configureStore } from "@testing-library/react";
+import { configureStore } from "@reduxjs/toolkit";
+import  modeReducer  from './features/modeSlice'
 
 export const store = configureStore ({
     reducer: {
-        
+        mode: modeReducer
     }
 })
